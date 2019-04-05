@@ -27,7 +27,7 @@ public class ReverseInteger {
             x /= 10;
             // check overflow
             // Integer.MAX_VALUE= 2147483647
-            if (retVal > Integer.MAX_VALUE / 10 || (retVal == Integer.MAX_VALUE && pop > 7)) {
+            if (retVal > Integer.MAX_VALUE / 10 || (retVal == Integer.MAX_VALUE / 10  && pop > 7)) {
                 return 0;
             }
             // Integer.MIN_VALUE= -2147483648
