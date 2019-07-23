@@ -1,5 +1,7 @@
 package com.believeyourself.leetcode.rangeSumofBST;
 
+import com.believeyourself.leetcode.domain.TreeNode;
+
 /**
  * 938. Range Sum of BST
  * Given the root node of a binary search tree, return the sum of values of all nodes with value between L and R (inclusive).
@@ -59,17 +61,6 @@ public class RangeSumofBST {
             }
         }
         return sum;
-    }
-
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 
 }
