@@ -1,5 +1,7 @@
 package com.believeyourself.leetcode.linkedListCycle;
 
+import com.believeyourself.leetcode.domain.ListNode;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -73,24 +75,6 @@ public class LinkedListCycleII {
         }
         return head;
 
-    }
-
-    class ListNode {
-
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-
-        @Override
-        public String toString() {
-            return "ListNode{" +
-                    "val=" + val +
-                    ", next=" + next +
-                    '}';
-        }
     }
 
 }

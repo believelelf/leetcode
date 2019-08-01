@@ -1,6 +1,8 @@
 package com.believeyourself.leetcode.swapNodesInPairs;
 
 
+import com.believeyourself.leetcode.domain.ListNode;
+
 /**
  * @author wubai
  * @date 2019/3/26 21:40
@@ -99,27 +101,6 @@ public class SwapNodesInPairs {
         curr.next = head;
         head.next = nextLoop;
         return curr;
-    }
-
-
-
-    static class ListNode {
-
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-
-        @Override
-        public String toString() {
-            return "ListNode{" +
-                    "val=" + val +
-                    ", next=" + next +
-                    '}';
-        }
     }
 
     public static void main(String[] args) {

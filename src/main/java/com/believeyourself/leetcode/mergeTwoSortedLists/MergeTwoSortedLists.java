@@ -1,5 +1,7 @@
 package com.believeyourself.leetcode.mergeTwoSortedLists;
 
+import com.believeyourself.leetcode.domain.ListNode;
+
 /**
  * 21. Merge Two Sorted Lists
  * Merge two sorted linked lists and return it as a new list. F
@@ -68,22 +70,6 @@ public class MergeTwoSortedLists {
     }
 
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-
-        @Override
-        public String toString() {
-            return "ListNode{" +
-                    "val=" + val +
-                    ", next=" + next +
-                    '}';
-        }
-    }
 
 
     public static void main(String[] args) {

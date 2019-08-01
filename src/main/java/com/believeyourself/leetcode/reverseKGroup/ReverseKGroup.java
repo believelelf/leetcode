@@ -1,5 +1,7 @@
 package com.believeyourself.leetcode.reverseKGroup;
 
+import com.believeyourself.leetcode.domain.ListNode;
+
 /**
  * 25. Reverse Nodes in k-Group
  *
@@ -46,26 +48,6 @@ public class ReverseKGroup {
             head = kPlusIndexNode;
         }
         return head;
-    }
-
-
-    static class ListNode {
-
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-
-        @Override
-        public String toString() {
-            return "ListNode{" +
-                    "val=" + val +
-                    ", next=" + next +
-                    '}';
-        }
     }
 
     public static void main(String[] args) {

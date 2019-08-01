@@ -1,5 +1,7 @@
 package com.believeyourself.leetcode.reverseLinkedList;
 
+import com.believeyourself.leetcode.domain.ListNode;
+
 /**
  * @author wubai
  * @date 2019/3/20 22:05
@@ -59,25 +61,7 @@ public class ReverseLinkedList {
         return head;
     }
 
-    /**
-     * 节点信息
-     */
-    static class ListNode {
-        int val;
-        ListNode next;
 
-        ListNode(int x) {
-            val = x;
-        }
-
-        @Override
-        public String toString() {
-            return "ListNode{" +
-                    "val=" + val +
-                    ", next=" + next +
-                    '}';
-        }
-    }
 
     public static void main(String[] args) {
         ListNode head = new ListNode(5);

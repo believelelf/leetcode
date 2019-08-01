@@ -1,5 +1,7 @@
 package com.believeyourself.leetcode.removeDuplicatesfromSortedList;
 
+import com.believeyourself.leetcode.domain.ListNode;
+
 /**
  * 83. Remove Duplicates from Sorted List
  * Given a sorted linked list, delete all duplicates such that each element appear only once.
@@ -36,23 +38,6 @@ public class RemoveDuplicatesfromSortedList {
             next = next.next;
         }
         return head;
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-
-        @Override
-        public String toString() {
-            return "ListNode{" +
-                    "val=" + val +
-                    ", next=" + next +
-                    '}';
-        }
     }
 
     public static void main(String[] args) {
