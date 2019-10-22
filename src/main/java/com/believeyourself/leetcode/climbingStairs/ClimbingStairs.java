@@ -34,22 +34,18 @@ public class ClimbingStairs {
      * @return 组合数
      */
     public int climbStairs(int n) {
-        if (n == 0) {
-            return 0;
+        if(n < 3){
+            return n;
         }
-        if (n == 1) {
-            return 1;
+        int answer = 3;
+        int last = 2;
+        int nextToLast = 1;
+        for (int i = 3; i <= n; i++) {
+            answer = last + nextToLast;
+            nextToLast = last;
+            last = answer;
         }
-        int count = 0;
-        int last = 1;
-        int lastlast = 0;
-        for (int i = 2; i <= n; i++) {
-            int current = lastlast + last;
-            count = current + last;
-            lastlast = last;
-            last = current;
-        }
-        return count;
+        return answer;
     }
 
     public static void main(String[] args) {
